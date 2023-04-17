@@ -189,14 +189,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="25dp">
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Отправить"
             android:layout_gravity="center_vertical|left"
             android:layout_margin="35dp"
-            android:onClick="sendButton"/>
+            android:onClick="sendButton"
+            android:text="Отправить" />
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"

@@ -45,7 +45,8 @@ public class ControlActivity extends AppCompatActivity {
         TextView textViewR = findViewById(R.id.seekBarValueR);
         TextView textViewG = findViewById(R.id.seekBarValueG);
         TextView textViewB = findViewById(R.id.seekBarValueB);
-        Button colBut = findViewById(R.id.button);
+
+
 
         xSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -132,22 +133,6 @@ public class ControlActivity extends AppCompatActivity {
 
             }
         });
-        SeekBar.OnSeekBarChangeListener seeekchange= new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                colBut.setBackgroundColor(Color.rgb(rSeekBar.getProgress(),gSeekBar.getProgress(),bSeekBar.getProgress()));
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        };
 
         mac = getIntent().getStringExtra("mac");
 
